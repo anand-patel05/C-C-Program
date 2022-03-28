@@ -74,36 +74,18 @@ void main(){
         temp=newnode;
     }
     display();
-    //temp=head;
-    //printf("Singly Linked List Elements: ");
-    //printf("|%d(%d)|--->", head, &head);
-    //while(temp!=0){
-        //printf("|%d(%d)", temp->data, temp);
-        //temp=temp->next;
-       // printf("|%d|--->", temp);
-    //}
+
     while(0<ch<6)   
     {  
         printf("\n\nEnter your choice: ");         
         scanf("%d",&ch);
         switch(ch)  
         {  
-            case 1:  
-            insert();
-            display();      
-            break;  
-            case 2:  
-            delete();
-            display();          
-            break;  
-            case 3:  
-            search();       
-            break;     
-            case 4:  
-            exit(0);  
-            break;  
-            default:  
-            printf("Please enter valid choice..");  
+            case 1: insert(); display(); break;  
+            case 2: delete(); display(); break;  
+            case 3: search(); break; 
+            case 4: exit(0);  break;  
+            default: printf("Please enter valid choice..");  
         }  
     }  
     getch();
